@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "BWyk8Koe6A5yqan7SOeVwelOG9LiGb6Nb6AQ6VRaKhk=",
+  "Source": "DocFlow.AuthService",
+  "BasePath": "_content/DocFlow.AuthService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
