@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DocFlow.AuthService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68c186a6460cc9c9fefe454340817a7dd3d418f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DocFlow.AuthService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DocFlow.AuthService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
