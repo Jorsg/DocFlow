@@ -1,6 +1,32 @@
 [
   {
     "ContainingType": "DocFlow.AuthService.Controllers.AuthController",
+    "Method": "LoginUserAsync",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DocFlow.AuthService.DTOs.LoginUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DocFlow.AuthService.Controllers.AuthController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/Auth/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DocFlow.AuthService.Controllers.AuthController",
     "Method": "RegisterUserAsync",
     "RelativePath": "api/Auth/register",
     "HttpMethod": "POST",

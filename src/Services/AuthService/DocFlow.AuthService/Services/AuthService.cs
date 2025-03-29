@@ -10,10 +10,32 @@ namespace DocFlow.AuthService.Services
 	public class AuthService : IAuthService
 	{
 		private readonly IAuthServiceRepository _authServiceRepository;
-		public AuthService(IAuthServiceRepository authServiceRepository)
+		private readonly JwtService _jwtService;
+		public AuthService(IAuthServiceRepository authServiceRepository, JwtService jwtService)
 		{
 			_authServiceRepository = authServiceRepository;
+			_jwtService = jwtService;
 		}
+
+		public async Task<(bool Succes, string Message, string? Token)> LoginUserAsync(LoginUserDto dto)
+		{
+			var user = await _authServiceRepository.GetUserByEmailAsync(dto.Email);
+			if (user == null)
+			{
+				return (false, "Ivalid email or password", null);
+			}
+
+			var isPasswordValid = PasswordHasher.VerifyPassword(dto.Password, user.PasswordHash);
+			if (!isPasswordValid)
+			{
+				return (false, "Ivalid email or password", null);
+			}
+
+			var toke = _jwtService.GenerateToken(user);
+
+			return (true, "user logged in successfully", toke);
+		}
+
 		public async Task<(bool Succes, string Message)> RegisterUserAsync(RegisterUserDTO dto)
 		{
 			var existingUser = await _authServiceRepository.GetUserByEmailAsync(dto.Email);
