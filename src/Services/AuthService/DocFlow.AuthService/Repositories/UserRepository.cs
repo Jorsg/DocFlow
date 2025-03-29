@@ -17,7 +17,7 @@ namespace DocFlow.AuthService.Repositories
 		}
 
 		public async Task CreateUserAsync(User user)
-		{
+		{ 
 			await _users.InsertOneAsync(user);
 		}
 

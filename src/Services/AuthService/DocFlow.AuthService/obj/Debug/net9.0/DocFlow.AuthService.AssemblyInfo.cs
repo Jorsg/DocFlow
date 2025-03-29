@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("1a066925-4b8d-4b99-bb47-613f8e17a20d")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DocFlow.AuthService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68c186a6460cc9c9fefe454340817a7dd3d418f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3bfe4223613e7ca059c20922312feb63b125196")]
 [assembly: System.Reflection.AssemblyProductAttribute("DocFlow.AuthService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DocFlow.AuthService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
