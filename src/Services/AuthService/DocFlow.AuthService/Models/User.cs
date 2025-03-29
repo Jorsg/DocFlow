@@ -13,7 +13,7 @@ namespace DocFlow.AuthService.Models
 		public string Username { get; set; }
 
 		[BsonElement("passwordHash")]
-		public string PasswordHash { get; set; }
+		public string PasswordHash { get; set; } 
 
 		[BsonElement("role")]
 		[BsonRepresentation(BsonType.String)]

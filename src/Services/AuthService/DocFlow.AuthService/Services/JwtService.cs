@@ -26,7 +26,7 @@ namespace DocFlow.AuthService.Services
 			{
 				new Claim(JwtRegisteredClaimNames.Sub, user.Id),
 				new Claim(JwtRegisteredClaimNames.Email, user.Email),
-				new Claim(ClaimTypes.Role, user.Role.ToString()),
+				new Claim(ClaimTypes.Role, user.Role.ToString()), 
 				new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
 			};
 
