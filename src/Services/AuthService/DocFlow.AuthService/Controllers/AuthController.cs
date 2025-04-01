@@ -19,6 +19,12 @@ namespace DocFlow.AuthService.Controllers
 		}
 
 		[HttpPost("register")]
+		[ProducesResponseType(StatusCodes.Status200OK)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
+		[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+		[ProducesResponseType(StatusCodes.Status403Forbidden)]
+		[ProducesResponseType(StatusCodes.Status404NotFound)]
+		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
 		public async Task<IActionResult> RegisterUserAsync(RegisterUserDTO dto)
 		{
 			var result = await _authService.RegisterUserAsync(dto);
@@ -30,6 +36,12 @@ namespace DocFlow.AuthService.Controllers
 		}
 
 		[HttpPost("Login")]
+		[ProducesResponseType(StatusCodes.Status200OK)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
+		[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+		[ProducesResponseType(StatusCodes.Status403Forbidden)]
+		[ProducesResponseType(StatusCodes.Status404NotFound)]
+		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
 		public async Task<IActionResult> LoginUserAsync(LoginUserDto dto)
 		{
 			var result = await _authService.LoginUserAsync(dto);
@@ -49,6 +61,12 @@ namespace DocFlow.AuthService.Controllers
 
 		[HttpGet("me")]
 		[Authorize]
+		[ProducesResponseType(StatusCodes.Status200OK)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
+		[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+		[ProducesResponseType(StatusCodes.Status403Forbidden)]
+		[ProducesResponseType(StatusCodes.Status404NotFound)]
+		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
 		public IActionResult GetCurrentUser()
 		{
 			var email = User.FindFirst(ClaimTypes.Email)?.Value;

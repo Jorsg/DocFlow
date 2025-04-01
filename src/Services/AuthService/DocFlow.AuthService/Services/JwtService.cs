@@ -34,10 +34,10 @@ namespace DocFlow.AuthService.Services
 			var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
 			var token = new JwtSecurityToken(
-				 _configuration["JwtSettings:Issuer"],
-				_configuration["JwtSettings:Audience"],
-				claim,
-				expires: DateTime.Now.AddMinutes(15),
+				issuer: _configuration["JwtSettings:Issuer"],
+				audience: _configuration["JwtSettings:Audience"],
+				claims: claim,
+				expires: DateTime.Now.AddHours(1),
 				signingCredentials: credentials
 			);
 

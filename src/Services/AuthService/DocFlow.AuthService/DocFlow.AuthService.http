@@ -1,8 +1,5 @@
 @DocFlow.AuthService_HostAddress = http://localhost:5295
 
-GET {{DocFlow.AuthService_HostAddress}}/weatherforecast/
-Accept: application/json
-
 ###
 POST {{DocFlow.AuthService_HostAddress}}/api/auth/register/
 Content-Type: application/json
@@ -20,4 +17,13 @@ accept: application/json
 {
     "email": "jorman@example.com",
     "password": "password123hashed!"
+}
+###
+GET {{DocFlow.AuthService_HostAddress}}/api/auth/me/
+Content-type: application/json
+Accept: application/json
+{
+    "id":"67e700a9f956f19997b31ea0",
+    "email":"jorman@example.com",
+    "role":"User"
 }
