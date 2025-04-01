@@ -20,12 +20,10 @@ var config = new ConfigurationBuilder()
 builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDbSettings"));
 builder.Services.AddTransient<MongoDbContext>();
 builder.Services.AddTransient<IAuthServiceRepository, UserRepository>();
+builder.Services.AddTransient<IDocumentRepository, DocumetRepository>();
 builder.Services.AddTransient<IAuthService, AuthService>();
 builder.Services.AddTransient<JwtService>();
 
-//Map JwtSettings
-//builder.Services.Configure<JwtSettings>(
-//	builder.Configuration.GetSection("JwtSettings"));
 
 
 //Bind JwtSettings
