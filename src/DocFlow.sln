@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthService", "AuthService"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocFlow.AuthService", "Services\AuthService\DocFlow.AuthService\DocFlow.AuthService.csproj", "{263301DB-3F38-4012-89AA-39141D8FA3BE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocumentService", "DocumentService", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocFlow.DocumentService", "DocFlow.DocumentService\DocFlow.DocumentService.csproj", "{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,18 @@ Global
 		{263301DB-3F38-4012-89AA-39141D8FA3BE}.Release|x64.Build.0 = Release|Any CPU
 		{263301DB-3F38-4012-89AA-39141D8FA3BE}.Release|x86.ActiveCfg = Release|Any CPU
 		{263301DB-3F38-4012-89AA-39141D8FA3BE}.Release|x86.Build.0 = Release|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Debug|x64.Build.0 = Debug|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Debug|x86.Build.0 = Debug|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Release|x64.ActiveCfg = Release|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Release|x64.Build.0 = Release|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Release|x86.ActiveCfg = Release|Any CPU
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +54,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{378295AF-C144-6721-7CFF-8DE6E58ED8C7} = {5854FF58-B8C5-05C6-5BF2-ACE42193F22B}
 		{263301DB-3F38-4012-89AA-39141D8FA3BE} = {378295AF-C144-6721-7CFF-8DE6E58ED8C7}
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {5854FF58-B8C5-05C6-5BF2-ACE42193F22B}
+		{6D104FBC-CA8B-4F34-87B5-6E761D5084AA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5646332C-02F9-472F-836E-ACD1B421F27B}

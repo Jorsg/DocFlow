@@ -22,6 +22,7 @@ builder.Services.AddTransient<MongoDbContext>();
 builder.Services.AddTransient<IAuthServiceRepository, UserRepository>();
 builder.Services.AddTransient<IDocumentRepository, DocumetRepository>();
 builder.Services.AddTransient<IAuthService, AuthService>();
+builder.Services.AddTransient<IDocuementService, DocumentService>();
 builder.Services.AddTransient<JwtService>();
 
 

@@ -1,0 +1,6 @@
+@DocFlow.DocumentService_HostAddress = http://localhost:5210
+
+GET {{DocFlow.DocumentService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
