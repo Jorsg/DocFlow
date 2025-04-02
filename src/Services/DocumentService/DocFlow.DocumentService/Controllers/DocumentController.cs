@@ -34,7 +34,7 @@ namespace DocFlow.AuthService.Controllers
 				return BadRequest(new { message = "File is required" });
 
 			var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-			var ulrStorage = $"{_configuration["ConnectionString"]}{file.Name}";
+			var ulrStorage = $"{_configuration["AzureStore:ConnectionBlob"]}{file.FileName}";
 
 			var response = await _documentService.UploadDocumentAsync(userId, dto, ulrStorage);
 

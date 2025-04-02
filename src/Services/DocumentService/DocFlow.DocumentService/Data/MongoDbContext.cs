@@ -14,6 +14,6 @@ namespace DocFlow.AuthService.Data
 			_database = client.GetDatabase(settings.Value.DatabaseName);
 		}
 
-		public IMongoCollection<User> Users => _database.GetCollection<User>("Users");
+		public IMongoCollection<Document> Documents => _database.GetCollection<Document>("Documents");
 	}
 }
