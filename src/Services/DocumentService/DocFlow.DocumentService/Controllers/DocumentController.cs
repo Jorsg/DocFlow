@@ -34,20 +34,38 @@ namespace DocFlow.AuthService.Controllers
 				return BadRequest(new { message = "File is required" });
 
 			var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-			var ulrStorage = $"{_configuration["ConnectionString"]}{file.Name}";
+			var ulrStorage = $"{_configuration["AzureStore:ConnectionBlob"]}{file.FileName}";
 
 			var response = await _documentService.UploadDocumentAsync(userId, dto, ulrStorage);
 
 			return response != null ? Ok(response) : BadRequest(new { message = "Failed to upload document" });
 		}
 
-		[HttpGet]
+		[HttpGet("document")]
 		[ProducesResponseType(typeof(List<DocumentResponseDTO>), StatusCodes.Status200OK)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
+		[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+		[ProducesResponseType(StatusCodes.Status403Forbidden)]
+		[ProducesResponseType(StatusCodes.Status404NotFound)]
+		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
 		public async Task<IActionResult> GetUserDocumentsAsync()
 		{
 			var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 			var documents = await _documentService.GetUserDocumentsAsync(userId);
 			return Ok(documents);
+		}
+
+		[HttpDelete("{id}")]
+		[ProducesResponseType(StatusCodes.Status204NoContent)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
+		[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+		[ProducesResponseType(StatusCodes.Status403Forbidden)]
+		[ProducesResponseType(StatusCodes.Status404NotFound)]
+		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
+		public async Task<IActionResult> DeleteDocumentAsync(string id)
+		{
+			await _documentService.DeleteDocumentAsync(id);
+			return NoContent();
 		}
 	}
 }

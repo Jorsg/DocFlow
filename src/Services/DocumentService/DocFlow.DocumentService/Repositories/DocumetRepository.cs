@@ -2,6 +2,8 @@
 using DocFlow.AuthService.Interfaces;
 using MongoDB.Driver;
 using DocFlow.AuthService.Models;
+using MongoDB.Bson;
+using DocFlow.AuthService.Helpers;
 
 namespace DocFlow.AuthService.Repositories
 {
@@ -20,8 +22,10 @@ namespace DocFlow.AuthService.Repositories
 		}
 
 		public async Task DeleteDocumentAsync(string id)
-		{
-			await _documents.DeleteOneAsync(d => d.Id == id);
+		{			
+			var objectId = MongoObjectIdToStringConverter.ConvertStringToObjectId(id);// ConvertString To ObjectId MongoDB;
+
+			await _documents.DeleteOneAsync(d => d.UserId == objectId.ToString());
 		}
 
 		public async Task<Document?> GetDocumentByIdAsync(string id)
