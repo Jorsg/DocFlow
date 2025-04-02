@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Repos\\TradService\\DocFlow\\src\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|d:\\repos\\tradservice\\docflow\\src\\services\\authservice\\docflow.authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|solutionrelative:services\\authservice\\docflow.authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|d:\\repos\\tradservice\\docflow\\src\\services\\authservice\\docflow.authservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|solutionrelative:services\\authservice\\docflow.authservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|d:\\repos\\tradservice\\docflow\\src\\services\\authservice\\docflow.authservice\\repositories\\documetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|solutionrelative:services\\authservice\\docflow.authservice\\repositories\\documetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|d:\\repos\\tradservice\\docflow\\src\\services\\authservice\\docflow.authservice\\helpers\\mongoobjectidtostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|solutionrelative:services\\authservice\\docflow.authservice\\helpers\\mongoobjectidtostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|d:\\repos\\tradservice\\docflow\\src\\services\\authservice\\docflow.authservice\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{263301DB-3F38-4012-89AA-39141D8FA3BE}|Services\\AuthService\\DocFlow.AuthService\\DocFlow.AuthService.csproj|solutionrelative:services\\authservice\\docflow.authservice\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,71 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService\\DocFlow.AuthService\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Services\\AuthService\\DocFlow.AuthService\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T21:07:26.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\appsettings.json",
-              "RelativeDocumentMoniker": "Services\\AuthService\\DocFlow.AuthService\\appsettings.json",
-              "ToolTip": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\appsettings.json",
-              "RelativeToolTip": "Services\\AuthService\\DocFlow.AuthService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-01T20:57:43.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MongoObjectIdToStringConverter.cs",
-              "DocumentMoniker": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\Helpers\\MongoObjectIdToStringConverter.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService\\DocFlow.AuthService\\Helpers\\MongoObjectIdToStringConverter.cs",
-              "ToolTip": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\Helpers\\MongoObjectIdToStringConverter.cs",
-              "RelativeToolTip": "Services\\AuthService\\DocFlow.AuthService\\Helpers\\MongoObjectIdToStringConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T19:35:19.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DocumetRepository.cs",
-              "DocumentMoniker": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\Repositories\\DocumetRepository.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService\\DocFlow.AuthService\\Repositories\\DocumetRepository.cs",
-              "ToolTip": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\Repositories\\DocumetRepository.cs",
-              "RelativeToolTip": "Services\\AuthService\\DocFlow.AuthService\\Repositories\\DocumetRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T18:41:39.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DocumentController.cs",
-              "DocumentMoniker": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\Controllers\\DocumentController.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService\\DocFlow.AuthService\\Controllers\\DocumentController.cs",
-              "ToolTip": "D:\\Repos\\TradService\\DocFlow\\src\\Services\\AuthService\\DocFlow.AuthService\\Controllers\\DocumentController.cs",
-              "RelativeToolTip": "Services\\AuthService\\DocFlow.AuthService\\Controllers\\DocumentController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAiwEIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T20:47:29.749Z",
-              "EditorCaption": ""
             }
           ]
         }
